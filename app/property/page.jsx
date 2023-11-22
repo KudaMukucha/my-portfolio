@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from '/public/property.jpg'
+import propertyImg from '/public/discover.PNG'
 import { BiRadioCircleMarked } from 'react-icons/bi'
 import Link from 'next/link'
 
@@ -15,8 +15,8 @@ const property = () => {
             <Image className='absolute z-1' layout='fill' objectFit='cover' src={propertyImg} alt={'/'}/>
            
             <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 '>
-                <h2 className='py-2'>Property Finder</h2>
-                <h3>React JS/ Tailwind/ Firebase</h3>
+                <h2 className='py-2'>Discover Places App</h2>
+                <h3>React JS/ Tailwind/ Google API</h3>
             </div>
         </div>
 

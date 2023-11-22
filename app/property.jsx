@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import propertyImg from '../public/property.jpg'
+import propertyImg from '../public/discover.PNG'
 
 const property = () => {
   return (
