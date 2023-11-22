@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 
 const Contact = () => {
@@ -27,18 +27,22 @@ const Contact = () => {
                             <div>
                             <p className='uppercase pt-8'>Connect with me.</p>
                             <div className='flex items-center justify-between py-4'>
-                            <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaLinkedin/>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaGithub/>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaTwitter/>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <BsFillPersonLinesFill/>
-                    </div>
+                            <Link href={'https://www.linkedin.com/in/kudakwashe-mukucha-998b3b178/'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaLinkedin/>
+                    </Link>
+
+                    <Link href={'https://github.com/KudaMukucha'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaGithub/>
+                    </Link>
+
+                    <Link href={'https://twitter.com/kudamukucha_'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaTwitter/>
+                    </Link>
+                    
+                    <Link href={'https://wa.me/263783291884'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaWhatsapp/>
+                    </Link>
+                   
                             </div>
                         </div>
                         </div>

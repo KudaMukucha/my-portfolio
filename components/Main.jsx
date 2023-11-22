@@ -1,5 +1,5 @@
-import { BsFillPersonLinesFill } from "react-icons/bs"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import Link from "next/link"
+import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa"
 
 const Main = () => {
   return (
@@ -15,18 +15,22 @@ const Main = () => {
                 </p>
 
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                    <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaLinkedin/>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaGithub/>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaTwitter/>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <BsFillPersonLinesFill/>
-                    </div>
+                    <Link href={'https://www.linkedin.com/in/kudakwashe-mukucha-998b3b178/'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaLinkedin/>
+                    </Link>
+
+                    <Link href={'https://github.com/KudaMukucha'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaGithub/>
+                    </Link>
+
+                    <Link href={'https://twitter.com/kudamukucha_'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaTwitter/>
+                    </Link>
+                    
+                    <Link href={'https://wa.me/263783291884'} className='rounded-full shadow-lg shadow-gray-300 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                    <FaWhatsapp/>
+                    </Link>
+                   
                 </div>
             </div>
         </div>
