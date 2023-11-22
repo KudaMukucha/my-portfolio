@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import ProjectItem from "./ProjectItem"
-import DiscoverImg from '../public/discover.png'
+import DiscoverImg from '../public/discover.PNG'
 
 const Projects = () => {
   return (
